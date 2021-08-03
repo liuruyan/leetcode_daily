@@ -47,21 +47,21 @@ int findUnsortedSubarray(vector<int>& nums) {
 }
 
 
-int findUnsortedSubarray(vector<int>& nums) {
+// int findUnsortedSubarray(vector<int>& nums) {
 
-    vector<int> nums_cop = nums;
-    sort(nums_cop.begin(),nums_cop.end());
-    int index = 0,i;
-    for(i = 0;i<nums.size();i++){
-        if(nums_cop[i]==nums[i])index++;
-        else break;
-    }
-    for(int j = nums.size()-1;j>=i;j--){
-        if(nums_cop[j]==nums[j])index++;
-        else break;
-    }
-    return nums.size()-index;
-}
+//     vector<int> nums_cop = nums;
+//     sort(nums_cop.begin(),nums_cop.end());
+//     int index = 0,i;
+//     for(i = 0;i<nums.size();i++){
+//         if(nums_cop[i]==nums[i])index++;
+//         else break;
+//     }
+//     for(int j = nums.size()-1;j>=i;j--){
+//         if(nums_cop[j]==nums[j])index++;
+//         else break;
+//     }
+//     return nums.size()-index;
+// }
 
 int main(){
     vector<int> t = {2,6,4,8,10,9,15};
