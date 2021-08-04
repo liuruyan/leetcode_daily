@@ -25,7 +25,7 @@ int triangleNumber(vector<int>& nums) {
     }
     return ans;
 }
-//暴力
+//暴力 
 // int triangleNumber(vector<int>& nums) {
 //     int MIN,MAX;
 //     int n = nums.size(),ans = 0;
